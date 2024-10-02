@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример с фоном и прокруткой</title>
+    <link rel="stylesheet" href="./css/stylest.css">
+</head>
+<body>
+
+    <!-- Фон с изображением и контентом на первом экране -->
+    <section class="mainView">
+        <header class="header">
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="Логотип" class="logo">
+            </div>
+            <div class="nav-menu">
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./navBar/About.html">About us</a>
+                <a href="./navBar/Packages.html">Packages</a>
+            </nav>
+        </div>
+
+        </header>
+        <div class="mainViewContent">
+            <h1>Your Imagination Is  <br>
+                Your Only Limit</h1>
+            <p>We always try to make our customer Happy. We provide all kind of facilities.  <br>
+                Your Satisfaction is our main priority</p>
+            <nav> 
+            <a href="./navBar/Main.html">Discover more</a>
+           </nav>
+        </div>
+    </section>
+
+    <!-- Основной контент после прокрутки -->
+    <section id="section1">
+        <h2>Таблица с данными</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Колонка 1</th>
+                    <th>Колонка 2</th>
+                    <th colspan="2" class="merge">Объединенная колонка 3 и 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td>Данные 1</td>
+                    <td>Данные 2</td>
+                    <td>Данные 3</td>
+                    <td>Данные 4</td>
+                </tr>
+                <tr class="even">
+                    <td>Данные 5</td>
+                    <td>Данные 6</td>
+                    <td>Данные 7</td>
+                    <td>Данные 8</td>
+                </tr>
+                <tr class="odd">
+                    <td>Данные 9</td>
+                    <td>Данные 10</td>
+                    <td>Данные 11</td>
+                    <td>Данные 12</td>
+                </tr>
+                <tr class="even">
+                    <td>Данные 13</td>
+                    <td>Данные 14</td>
+                    <td>Данные 15</td>
+                    <td>Данные 16</td>
+                </tr>
+                <tr class="odd">
+                    <td>Данные 17</td>
+                    <td>Данные 18</td>
+                    <td>Данные 19</td>
+                    <td>Данные 20</td>
+                </tr>
+                <tr class="even">
+                    <td>Данные 21</td>
+                    <td>Данные 22</td>
+                    <td>Данные 23</td>
+                    <td>Данные 24</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id ="dolgi">
+        <ul>
+            <li><a href="http://www.kubsu.ru">Абсолютная гиперссылка на главную страницу сайта kubsu.ru;</a></li>
+            <li><a href="https://www.kubsu.ru/index.php">Абсолютная на главную сайта kubsu.ru в протоколе https;</a></li>
+            <li>
+                <a href="https://github.com/allisona05">
+                    <img src="https://png.pngtree.com/png-clipart/20230501/original/pngtree-mushroom-girl-3d-cute-expression-png-image_9129145.png"
+                         width="40%" height="40%" alt="Описание изображения">
+                </a>
+            </li>
+            <li><a href="web.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+            <li><a href="index.html">Сокращенная ссылка на главную страницу</a></li>
+            <li><a href="#section1">Перейти к Разделу 1</a></li>
+            <li><a href="https://yandex.ru/search/?text=мультяшные+живые+грибочки&lr=35&p=2">Перейти по ссылке с тремя параметрами</a></li>
+            <li><a href="https://example.com/page.html?id=123">Перейти по ссылке с параметром id</a></li>
+            <li><a href="./web.html">Перейти на страницу web.html</a></li>
+            <li><a href="./about.html">Перейти на about</a></li>
+            <li><a href="../fileLVL1.html">Каталог один уровнем выше</a></li>
+            <li><a href="../../fileLVL2.html">Каталог двумя уровнями выше</a></li>
+            <li><p>Вы можете вернуться на <a href="index.html">главную страницу</a> в любой момент.</p></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML#Introduction">Перейти к разделу Introduction на MDN</a></li>
+            <li>
+                <img src="https://png.pngtree.com/png-clipart/20230501/original/pngtree-mushroom-girl-3d-cute-expression-png-image_9129145.png"
+                     alt="Пример изображения" usemap="#imagemap" width="500" height="300">
+                <map name="imagemap">
+                    <area shape="rect" coords="34,44,270,350" alt="Прямоугольник" href="web.html">
+                    <area shape="circle" coords="337,300,44" alt="Круг" href="web.html">
+                </map>
+            </li>
+            <li><a href="#" onclick="return false;">Пустой href</a></li>
+            <li><a> Текст ссылки без href </a></li>
+            <li><a href="index.html" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+    
+            <li><a href="https://example.com" rel="nofollow">Ссылка, запрещенная для индексации</a></li>
+            
+            <li><ol>
+                <li><a href="https://example.com" title="Перейти на Example">Example</a></li>
+                <li><a href="https://example2.com" title="Перейти на Example2">Example2</a></li>
+                <li><a href="https://example3.com" title="Перейти на Example3">Example3</a></li>
+            </ol></li>
+            <li><a href="ftp://user:password@ftp.example.com/file.txt">Загрузить файл с FTP</a></li>
+            
+    
+    
+        </ul>    
+    </section>
+
+    <section id="section2">
+        <div id="registration-form">
+            <h2>Форма регистрации</h2>
+            <form action="/submit" method="post">
+                <!-- ФИО -->
+                <label for="fullname">ФИО:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <br><br>
+        
+                <!-- Телефон -->
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br><br>
+        
+                <!-- E-mail -->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+        
+                <!-- Дата рождения -->
+                <label for="birthdate">Дата рождения:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                <br><br>
+        
+                <!-- Пол -->
+                <label>Пол:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Мужской</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Женский</label>
+                <br><br>
+        
+                <!-- Любимый язык программирования -->
+                <label for="languages" class="block-label">Любимый язык программирования:</label>
+                <select id="languages" name="languages[]" multiple size="5">
+                    <option value="pascal">Pascal</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="haskel">Haskel</option>
+                    <option value="clojure">Clojure</option>
+                    <option value="prolog">Prolog</option>
+                    <option value="scala">Scala</option>
+                </select>
+        
+                <!-- Биография -->
+                <label for="bio" class="block-label">Биография:</label>
+                <textarea id="bio" name="bio" rows="4" cols="50" required></textarea>
+                <br><br>
+        
+                <!-- Чекбокс -->
+                <input type="checkbox" id="contract" name="contract" required>
+                <label for="contract">С контрактом ознакомлен (а)</label>
+                <br><br>
+        
+                <!-- Кнопка сохранить -->
+                <button type="submit">Сохранить</button>
+            </form>
+        </div>
+    </section>
+
+        <!-- Подвал сайта -->
+        <footer id="site-footer">
+            <div class="container">
+                <p>&copy; 2024 Allisona. Все права защищены.</p>
+            </div>
+        </footer>
+</body>
+</html>
